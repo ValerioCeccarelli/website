@@ -1,5 +1,7 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "html.format.enable": false
+    "html.format.enable": false,
+    "cSpell.language": "en,it",
+    "cSpell.words": []
 }
