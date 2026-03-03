@@ -1,0 +1,1828 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Modifiche alla costituzione del referendum sulla Giustizia
+        </title>
+
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Referendum Giustizia 2026" />
+        <meta
+            property="og:description"
+            content="Analisi comparata, testo del quesito e posizioni politiche" />
+        <meta property="og:type" content="article" />
+
+        <!-- Bootstrap 5 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            xintegrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+
+        <!-- Font Awesome for Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+        <style>
+            body {
+                background-color: #f8f9fa;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                color: #333;
+            }
+
+            .main-container {
+                max-width: 1100px;
+                /* Limita la larghezza su schermi grandi per leggibilità */
+                margin: 0 auto;
+                padding-bottom: 3rem;
+            }
+
+            /* Header Styling - New Style */
+            header {
+                padding: 4rem 1rem;
+                text-align: center;
+                background-color: #ffffff;
+                color: #2c3e50;
+                border-top: 5px solid #009246;
+                /* Verde tricolore */
+                border-bottom: 1px solid #e9ecef;
+                margin-bottom: 3rem;
+                position: relative;
+            }
+
+            /* Accento tricolore decorativo */
+            header::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 5px;
+                background: linear-gradient(
+                    90deg,
+                    #009246 33%,
+                    #ffffff 33%,
+                    #ffffff 66%,
+                    #ce2b37 66%
+                );
+            }
+
+            header h1 {
+                font-weight: 800;
+                margin-bottom: 0.5rem;
+                color: #1a1a1a;
+                letter-spacing: -1px;
+            }
+
+            header .lead {
+                font-weight: 300;
+                color: #6c757d;
+                font-size: 1.25rem;
+            }
+
+            /* Card Styling */
+            .card {
+                border: none;
+                border-radius: 0.75rem;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+                margin-bottom: 1.5rem;
+                transition: transform 0.2s;
+            }
+
+            .card:hover {
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .source-link {
+                font-size: 0.85rem;
+                color: #6c757d;
+                /* Colore sbiadito richiesto */
+                text-decoration: none;
+                display: inline-block;
+                margin-top: 0.5rem;
+                transition: color 0.2s;
+            }
+
+            .source-link:hover {
+                color: #0d6efd;
+                text-decoration: underline;
+            }
+
+            /* Diff Styling */
+            .comparison-section {
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: 0.75rem;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            }
+
+            .comment-section {
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: 0.75rem;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            }
+
+            .article-title {
+                border-bottom: 2px solid #dee2e6;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1.5rem;
+                color: #495057;
+            }
+
+            .col-current {
+                border-right: 1px solid #dee2e6;
+            }
+
+            /* Responsive Border adjustment */
+            @media (max-width: 767px) {
+                .col-current {
+                    border-right: none;
+                    border-bottom: 1px solid #dee2e6;
+                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .diff-text {
+                line-height: 1.6;
+            }
+
+            .diff-text p {
+                margin-bottom: 0.5rem;
+            }
+
+            /* Classi specifiche per le modifiche richieste */
+            .diff-removed {
+                background-color: #ffe6e6;
+                /* Rosso pastello */
+                color: #9b1c1c;
+                padding: 2px 4px;
+                border-radius: 4px;
+                border: 1px solid #fecaca;
+            }
+
+            .diff-added {
+                background-color: #dcfce7;
+                /* Verde pastello */
+                color: #166534;
+                font-weight: 600;
+                padding: 2px 4px;
+                border-radius: 4px;
+                border: 1px solid #bbf7d0;
+            }
+
+            .diff-removed-block {
+                background-color: #ffe6e6;
+                color: #9b1c1c;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border-left: 5px solid #dc3545;
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .diff-added-block {
+                background-color: #dcfce7;
+                color: #166534;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border-left: 5px solid #198754;
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .btn-gazzetta {
+                background-color: #6f42c1;
+                border-color: #6f42c1;
+                color: white;
+            }
+
+            .btn-gazzetta:hover {
+                background-color: #59359a;
+                color: white;
+            }
+
+            /* Stile specifico per le immagini dei leader */
+            .party-avatar {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 4px solid #f8f9fa;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-top: -60px;
+                /* Effetto sovrapposto */
+                background-color: #fff;
+            }
+
+            .party-card-body {
+                padding-top: 0;
+                margin-top: 20px;
+                /* Spazio per l'avatar */
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="display-4">Referendum Giustizia 2026</h1>
+                <p class="lead">
+                    Analisi comparata, testo del quesito e posizioni politiche
+                </p>
+            </div>
+        </header>
+
+        <div class="container main-container">
+            <!-- Testo quesito -->
+            <div class="card border-primary mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-question-circle me-2"></i>
+                        Il Quesito Referendario
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p class="fs-5">
+                            Approvate il testo della legge costituzionale
+                            concernente "Norme in materia di ordinamento
+                            giurisdizionale e di istituzione della Corte
+                            disciplinare" approvato dal Parlamento e pubblicato
+                            nella Gazzetta Ufficiale n. 253 del 30 ottobre 2025?
+                        </p>
+                        <p class="card-text text-muted fst-italic">
+                            * Il testo del referendum è stato cambiato, a breve
+                            sapremo il testo definitivo.
+                        </p>
+                        <footer class="mt-3">
+                            <a
+                                href="https://www.ilpost.it/2025/11/19/quesito-referendum-confermativo-riforma-giustizia/"
+                                target="_blank"
+                                class="source-link">
+                                <i class="fas fa-external-link-alt me-1"></i>
+                                Fonte: il Post
+                            </a>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Link Gazzetta -->
+            <div class="text-center mb-5">
+                <a
+                    href="https://www.gazzettaufficiale.it/eli/gu/2025/10/30/253/sg/pdf#page=6"
+                    target="_blank"
+                    class="btn btn-gazzetta btn-lg shadow">
+                    <i class="fas fa-file-pdf me-2"></i>
+                    Scarica il testo integrale (Gazzetta Ufficiale n. 253)
+                </a>
+            </div>
+
+            <!-- Spiegazione Referendum -->
+            <div class="card bg-light mb-5">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Come funziona il referendum costituzionale
+                    </h5>
+                    <p class="card-text">
+                        Il referendum costituzionale (o confermativo) è un tipo
+                        di referendum che serve a confermare una legge
+                        costituzionale che non ha ottenuto la maggioranza dei
+                        due terzi in Parlamento. A differenza del referendum
+                        abrogativo, <strong>non richiede un quorum</strong>, il
+                        che significa che i voti vengono conteggiati
+                        indipendentemente dalla partecipazione degli aventi
+                        diritto.
+                    </p>
+                    <a
+                        href="https://it.wikipedia.org/wiki/Referendum_(ordinamento_italiano)#Referendum_costituzionale"
+                        target="_blank"
+                        class="source-link">
+                        <i class="fas fa-external-link-alt me-1"></i>
+                        Fonte: wikipedia
+                    </a>
+                </div>
+            </div>
+
+            <!-- Confronto Articoli Costituzionali -->
+            <div class="comparison-section">
+                <h2 class="text-center mb-5">
+                    <i class="fas fa-balance-scale me-2"></i>
+                    Confronto Articoli Costituzionali
+                </h2>
+
+                <!-- Art. 87 -->
+                <div class="mb-5" id="art-87">
+                    <h3 class="article-title">
+                        Art. 87.
+                        <a
+                            href="#art-87"
+                            class="text-muted fs-6 ms-2 text-decoration-none"
+                            ><i class="fas fa-link"></i
+                        ></a>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 col-current">
+                            <h6 class="text-muted text-uppercase mb-3">
+                                Testo Attuale
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    Il Presidente della Repubblica è il capo
+                                    dello Stato e rappresenta l'unità nazionale.
+                                </p>
+                                <p>Può inviare messaggi alle Camere.</p>
+                                <p>
+                                    Indice le elezioni delle nuove Camere e ne
+                                    fissa la prima riunione.
+                                </p>
+                                <p>
+                                    Autorizza la presentazione alle Camere dei
+                                    disegni di legge di iniziativa del Governo.
+                                </p>
+                                <p>
+                                    Promulga le leggi ed emana i decreti aventi
+                                    valore di legge e i regolamenti.
+                                </p>
+                                <p>
+                                    Indice il referendum popolare nei casi
+                                    previsti dalla Costituzione.
+                                </p>
+                                <p>
+                                    Nomina, nei casi indicati dalla legge, i
+                                    funzionari dello Stato.
+                                </p>
+                                <p>
+                                    Accredita e riceve i rappresentanti
+                                    diplomatici, ratifica i trattati
+                                    internazionali, previa, quando occorra,
+                                    l'autorizzazione delle Camere.
+                                </p>
+                                <p>
+                                    Ha il comando delle Forze armate, presiede
+                                    il Consiglio supremo di difesa costituito
+                                    secondo la legge, dichiara lo stato di
+                                    guerra deliberato dalle Camere.
+                                </p>
+                                <p>
+                                    Presiede il Consiglio superiore della
+                                    magistratura.
+                                </p>
+                                <p>Può concedere grazia e commutare le pene.</p>
+                                <p>
+                                    Conferisce le onorificenze della Repubblica.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-success text-uppercase mb-3">
+                                Testo Proposto
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    Il Presidente della Repubblica è il capo
+                                    dello Stato e rappresenta l'unità nazionale.
+                                </p>
+                                <p>Può inviare messaggi alle Camere.</p>
+                                <p>
+                                    Indice le elezioni delle nuove Camere e ne
+                                    fissa la prima riunione.
+                                </p>
+                                <p>
+                                    Autorizza la presentazione alle Camere dei
+                                    disegni di legge di iniziativa del Governo.
+                                </p>
+                                <p>
+                                    Promulga le leggi ed emana i decreti aventi
+                                    valore di legge e i regolamenti.
+                                </p>
+                                <p>
+                                    Indice il referendum popolare nei casi
+                                    previsti dalla Costituzione.
+                                </p>
+                                <p>
+                                    Nomina, nei casi indicati dalla legge, i
+                                    funzionari dello Stato.
+                                </p>
+                                <p>
+                                    Accredita e riceve i rappresentanti
+                                    diplomatici, ratifica i trattati
+                                    internazionali, previa, quando occorra,
+                                    l'autorizzazione delle Camere.
+                                </p>
+                                <p>
+                                    Ha il comando delle Forze armate, presiede
+                                    il Consiglio supremo di difesa costituito
+                                    secondo la legge, dichiara lo stato di
+                                    guerra deliberato dalle Camere.
+                                </p>
+                                <p>
+                                    Presiede il Consiglio superiore della
+                                    magistratura
+                                    <span class="diff-added">
+                                        giudicante e il Consiglio superiore
+                                        della magistratura requirente</span
+                                    >.
+                                </p>
+                                <p>Può concedere grazia e commutare le pene.</p>
+                                <p>
+                                    Conferisce le onorificenze della Repubblica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art. 102 -->
+                <div class="mb-5" id="art-102">
+                    <h3 class="article-title">
+                        Art. 102.
+                        <a
+                            href="#art-102"
+                            class="text-muted fs-6 ms-2 text-decoration-none">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 col-current">
+                            <h6 class="text-muted text-uppercase mb-3">
+                                Testo Attuale
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    La funzione giurisdizionale è esercitata da
+                                    magistrati ordinari istituiti e regolati
+                                    dalle norme sull'ordinamento giudiziario.
+                                </p>
+                                <p>
+                                    Non possono essere istituiti giudici
+                                    straordinari o giudici speciali. Possono
+                                    soltanto istituirsi presso gli organi
+                                    giudiziari ordinari sezioni specializzate
+                                    per determinate materie, anche con la
+                                    partecipazione di cittadini idonei estranei
+                                    alla magistratura.
+                                </p>
+                                <p>
+                                    La legge regola i casi e le forme della
+                                    partecipazione diretta del popolo
+                                    all'amministrazione della giustizia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-success text-uppercase mb-3">
+                                Testo Proposto
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    La funzione giurisdizionale è esercitata da
+                                    magistrati ordinari istituiti e regolati
+                                    dalle norme sull'ordinamento giudiziario
+                                    <span class="diff-added">
+                                        , le quali disciplinano altresì le
+                                        distinte carriere dei magistrati
+                                        giudicanti e requirenti</span
+                                    >.
+                                </p>
+                                <p>
+                                    Non possono essere istituiti giudici
+                                    straordinari o giudici speciali. Possono
+                                    soltanto istituirsi presso gli organi
+                                    giudiziari ordinari sezioni specializzate
+                                    per determinate materie, anche con la
+                                    partecipazione di cittadini idonei estranei
+                                    alla magistratura.
+                                </p>
+                                <p>
+                                    La legge regola i casi e le forme della
+                                    partecipazione diretta del popolo
+                                    all'amministrazione della giustizia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art. 104 -->
+                <div class="mb-5" id="art-104">
+                    <h3 class="article-title">
+                        Art. 104.
+                        <a
+                            href="#art-104"
+                            class="text-muted fs-6 ms-2 text-decoration-none">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 col-current">
+                            <h6 class="text-muted text-uppercase mb-3">
+                                Testo Attuale
+                            </h6>
+                            <div class="diff-removed-block diff-text">
+                                <p>
+                                    La magistratura costituisce un ordine
+                                    autonomo e indipendente da ogni altro
+                                    potere.
+                                </p>
+                                <p>
+                                    Il Consiglio superiore della magistratura è
+                                    presieduto dal Presidente della Repubblica.
+                                </p>
+                                <p>
+                                    Ne fanno parte di diritto il primo
+                                    presidente e il procuratore generale della
+                                    Corte di cassazione.
+                                </p>
+                                <p>
+                                    Gli altri componenti sono eletti per due
+                                    terzi da tutti i magistrati ordinari tra gli
+                                    appartenenti alle varie categorie, e per un
+                                    terzo dal Parlamento in seduta comune tra
+                                    professori ordinari di università in materie
+                                    giuridiche ed avvocati dopo quindici anni di
+                                    esercizio.
+                                </p>
+                                <p>
+                                    Il Consiglio elegge un vicepresidente fra i
+                                    componenti designati dal Parlamento.
+                                </p>
+                                <p>
+                                    I membri elettivi del Consiglio durano in
+                                    carica quattro anni e non sono
+                                    immediatamente rieleggibili.
+                                </p>
+                                <p>
+                                    Non possono, finchè sono in carica, essere
+                                    iscritti negli albi professionali, né far
+                                    parte del Parlamento o di un Consiglio
+                                    regionale.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-success text-uppercase mb-3">
+                                Testo Proposto
+                            </h6>
+                            <div class="diff-added-block diff-text">
+                                <p>
+                                    La magistratura costituisce un ordine
+                                    autonomo e indipendente da ogni altro potere
+                                    ed è composta dai magistrati della carriera
+                                    giudicante e della carriera requirente.
+                                </p>
+                                <p>
+                                    Il Consiglio superiore della magistratura
+                                    giudicante e il Consiglio superiore della
+                                    magistratura requirente sono presieduti dal
+                                    Presidente della Repubblica.
+                                </p>
+                                <p>
+                                    Ne fanno parte di diritto, rispettivamente,
+                                    il primo presidente e il procuratore
+                                    generale della Corte di cassazione.
+                                </p>
+                                <p>
+                                    Gli altri componenti sono estratti a sorte,
+                                    per un terzo, da un elenco di professori
+                                    ordinari di università in materie giuridiche
+                                    e di avvocati con almeno quindici anni di
+                                    esercizio, che il Parlamento in seduta
+                                    comune, entro sei mesi dall'insediamento,
+                                    compila mediante elezione, e, per due terzi,
+                                    rispettivamente, tra i magistrati giudicanti
+                                    e i magistrati requirenti, nel numero e
+                                    secondo le procedure previsti dalla legge.
+                                </p>
+                                <p>
+                                    Ciascun Consiglio elegge il proprio
+                                    vicepresidente tra i componenti designati
+                                    mediante sorteggio dall'elenco compilato dal
+                                    Parlamento in seduta comune.
+                                </p>
+                                <p>
+                                    I componenti designati mediante sorteggio
+                                    durano in carica quattro anni e non possono
+                                    partecipare alla procedura di sorteggio
+                                    successiva.
+                                </p>
+                                <p>
+                                    I componenti non possono, finché sono in
+                                    carica, essere iscritti negli albi
+                                    professionali né far parte del Parlamento o
+                                    di un Consiglio regionale
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art. 105 -->
+                <div class="mb-5" id="art-105">
+                    <h3 class="article-title">
+                        Art. 105.
+                        <a
+                            href="#art-105"
+                            class="text-muted fs-6 ms-2 text-decoration-none">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 col-current">
+                            <h6 class="text-muted text-uppercase mb-3">
+                                Testo Attuale
+                            </h6>
+                            <div class="diff-removed-block diff-text">
+                                <p>
+                                    Spettano al Consiglio superiore della
+                                    magistratura, secondo le norme
+                                    dell'ordinamento giudiziario, le assunzioni,
+                                    le assegnazioni ed i trasferimenti, le
+                                    promozioni e i provvedimenti disciplinari
+                                    nei riguardi dei magistrati.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-success text-uppercase mb-3">
+                                Testo Proposto
+                            </h6>
+                            <div class="diff-added-block diff-text">
+                                <p>
+                                    Spettano a ciascun Consiglio superiore della
+                                    magistratura, secondo le norme
+                                    sull'ordinamento giudiziario, le assunzioni,
+                                    le assegnazioni, i trasferimenti, le
+                                    valutazioni di professionalità e i
+                                    conferimenti di funzioni nei riguardi dei
+                                    magistrati.
+                                </p>
+
+                                <p>
+                                    La giurisdizione disciplinare nei riguardi
+                                    dei magistrati ordinari, giudicanti e
+                                    requirenti, è attribuita all'Alta Corte
+                                    disciplinare.
+                                </p>
+
+                                <p>
+                                    L'Alta Corte è composta da quindici giudici
+                                    tre dei quali nominati dal Presidente della
+                                    Repubblica tra professori ordinari di
+                                    università in materie giuridiche e avvocati
+                                    con almeno venti anni di esercizio e tre
+                                    estratti a sorte da un elenco di soggetti in
+                                    possesso dei medesimi requisiti, che il
+                                    Parlamento in seduta comune, entro sei mesi
+                                    dall'insediamento, compila mediante
+                                    elezione, nonché da sei magistrati
+                                    giudicanti e tre requirenti, estratti a
+                                    sorte tra gli appartenenti alle rispettive
+                                    categorie con almeno venti anni di esercizio
+                                    delle funzioni giudiziarie e che svolgano o
+                                    abbiano svolto funzioni di legittimità.
+                                </p>
+
+                                <p>
+                                    L'Alta Corte elegge il presidente tra i
+                                    giudici nominati dal Presidente della
+                                    Repubblica o estratti a sorte dall'elenco
+                                    compilato dal Parlamento in seduta comune.
+                                </p>
+
+                                <p>
+                                    I giudici dell'Alta Corte durano in carica
+                                    quattro anni. L'incarico non può essere
+                                    rinnovato.
+                                </p>
+
+                                <p>
+                                    L'ufficio di giudice dell'Alta Corte è
+                                    incompatibile con quelli di membro del
+                                    Parlamento, del Parlamento europeo, di un
+                                    Consiglio regionale e del Governo, con
+                                    l'esercizio della professione di avvocato e
+                                    con ogni altra carica e ufficio indicati
+                                    dalla legge.
+                                </p>
+
+                                <p>
+                                    Contro le sentenze emesse dall'Alta Corte in
+                                    prima istanza è ammessa impugnazione, anche
+                                    per motivi di merito, soltanto dinanzi alla
+                                    stessa Alta Corte, che giudica senza la
+                                    partecipazione dei componenti che hanno
+                                    concorso a pronunciare la decisione
+                                    impugnata.
+                                </p>
+
+                                <p>
+                                    La legge determina gli illeciti disciplinari
+                                    e le relative sanzioni, indica la
+                                    composizione dei collegi, stabilisce le
+                                    forme del procedimento disciplinare e le
+                                    norme necessarie per il funzionamento
+                                    dell'Alta Corte e assicura che i magistrati
+                                    giudicanti o requirenti siano rappresentati
+                                    nel collegio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art. 106 -->
+                <div class="mb-5" id="art-106">
+                    <h3 class="article-title">
+                        Art. 106.
+                        <a
+                            href="#art-106"
+                            class="text-muted fs-6 ms-2 text-decoration-none">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 col-current">
+                            <h6 class="text-muted text-uppercase mb-3">
+                                Testo Attuale
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    Le nomine dei magistrati hanno luogo per
+                                    concorso.
+                                </p>
+                                <p>
+                                    La legge sull'ordinamento giudiziario può
+                                    ammettere la nomina, anche elettiva, di
+                                    magistrati onorari per tutte le funzioni
+                                    attribuite a giudici singoli.
+                                </p>
+                                <p>
+                                    Su designazione del Consiglio superiore
+                                    della magistratura possono essere chiamati
+                                    all'ufficio di consiglieri di cassazione,
+                                    per meriti insigni, professori ordinari di
+                                    università in materie giuridiche e avvocati
+                                    che abbiano quindici anni d'esercizio e
+                                    siano iscritti negli albi speciali per le
+                                    giurisdizioni superiori.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-success text-uppercase mb-3">
+                                Testo Proposto
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    Le nomine dei magistrati hanno luogo per
+                                    concorso.
+                                </p>
+                                <p>
+                                    La legge sull'ordinamento giudiziario può
+                                    ammettere la nomina, anche elettiva, di
+                                    magistrati onorari per tutte le funzioni
+                                    attribuite a giudici singoli.
+                                </p>
+                                <p>
+                                    Su designazione del Consiglio superiore
+                                    della magistratura
+                                    <span class="diff-added">giudicante</span>
+                                    possono essere chiamati all'ufficio di
+                                    consiglieri di cassazione, per meriti
+                                    insigni, professori ordinari di università
+                                    in materie giuridiche
+                                    <span class="diff-added">
+                                        , magistrati appartenenti alla
+                                        magistratura requirente con almeno
+                                        quindici anni di esercizio delle
+                                        funzioni
+                                    </span>
+                                    e avvocati che abbiano quindici anni
+                                    d'esercizio e siano iscritti negli albi
+                                    speciali per le giurisdizioni superiori.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art. 107 -->
+                <div class="mb-4" id="art-107">
+                    <h3 class="article-title">
+                        Art. 107.
+                        <a
+                            href="#art-107"
+                            class="text-muted fs-6 ms-2 text-decoration-none">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 col-current">
+                            <h6 class="text-muted text-uppercase mb-3">
+                                Testo Attuale
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    I magistrati sono inamovibili. Non possono
+                                    essere dispensati o sospesi dal servizio né
+                                    destinati ad altre sedi o funzioni se non in
+                                    seguito a decisione
+                                    <span class="diff-removed">
+                                        del Consiglio
+                                    </span>
+                                    superiore della magistratura, adottata o per
+                                    i motivi e con le garanzie di difesa
+                                    stabilite dall'ordinamento giudiziario o con
+                                    il loro consenso.
+                                </p>
+                                <p>
+                                    Il Ministro della giustizia ha facoltà di
+                                    promuovere l'azione disciplinare.
+                                </p>
+                                <p>
+                                    I magistrati si distinguono fra loro
+                                    soltanto per diversità di funzioni. Il
+                                    pubblico ministero gode delle garanzie
+                                    stabilite nei suoi riguardi dalle norme
+                                    sull'ordinamento giudiziario.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-success text-uppercase mb-3">
+                                Testo Proposto
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    I magistrati sono inamovibili. Non possono
+                                    essere dispensati o sospesi dal servizio né
+                                    destinati ad altre sedi o funzioni se non in
+                                    seguito a decisione
+                                    <span class="diff-added">
+                                        di ciascun Consiglio
+                                    </span>
+                                    superiore della magistratura, adottata o per
+                                    i motivi e con le garanzie di difesa
+                                    stabilite dall'ordinamento giudiziario o con
+                                    il loro consenso.
+                                </p>
+                                <p>
+                                    Il Ministro della giustizia ha facoltà di
+                                    promuovere l'azione disciplinare.
+                                </p>
+                                <p>
+                                    I magistrati si distinguono fra loro
+                                    soltanto per diversità di funzioni. Il
+                                    pubblico ministero gode delle garanzie
+                                    stabilite nei suoi riguardi dalle norme
+                                    sull'ordinamento giudiziario.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art. 110 -->
+                <div class="mb-4" id="art-110">
+                    <h3 class="article-title">
+                        Art. 110.
+                        <a
+                            href="#art-110"
+                            class="text-muted fs-6 ms-2 text-decoration-none">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 col-current">
+                            <h6 class="text-muted text-uppercase mb-3">
+                                Testo Attuale
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    Ferme le competenze
+                                    <span class="diff-removed">
+                                        del Consiglio
+                                    </span>
+                                    superiore della magistratura, spettano al
+                                    Ministro della giustizia l'organizzazione e
+                                    il funzionamento dei servizi relativi alla
+                                    giustizia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-success text-uppercase mb-3">
+                                Testo Proposto
+                            </h6>
+                            <div class="diff-text">
+                                <p>
+                                    Ferme le competenze
+                                    <span class="diff-added">
+                                        di ciascun Consiglio
+                                    </span>
+                                    superiore della magistratura, spettano al
+                                    Ministro della giustizia l'organizzazione e
+                                    il funzionamento dei servizi relativi alla
+                                    giustizia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Fonti Comparazione -->
+                <div class="row mt-4 pt-4 border-top">
+                    <div class="col-md-6">
+                        <a
+                            href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:costituzione"
+                            target="_blank"
+                            class="source-link">
+                            <i class="fas fa-external-link-alt me-1"></i>
+                            Fonte testo attuale: Normattiva
+                        </a>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a
+                            href="https://www.gazzettaufficiale.it/eli/gu/2025/10/30/253/sg/pdf#page=6"
+                            target="_blank"
+                            class="source-link">
+                            <i class="fas fa-external-link-alt me-1"></i>
+                            Fonte testo proposto: Gazzetta Ufficiale
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Riassunto Articoli -->
+                <div class="card mt-5 shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h4 class="mb-0">
+                            <i class="fas fa-comments me-2"></i>
+                            Riassunto Articoli
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Le modifiche proposte alla Costituzione in materia
+                            di giustizia intervengono su diversi articoli,
+                            ridefinendo l'assetto della magistratura e degli
+                            organi di governo autonomo.
+                        </p>
+
+                        <p class="card-text">
+                            <a href="#art-87">Art. 87</a> -
+                            <a href="#art-107">Art. 107</a> -
+                            <a href="#art-110">Art. 110</a><br />
+                            Questi articoli sono stati modificati solo per
+                            cambiare i riferimenti al Consiglio Superiore della
+                            Magistratura, che viene ora suddiviso in due
+                            distinti organi. La modifica è necessaria per
+                            mantenere la coerenza con le altre modifiche
+                            proposte.
+                        </p>
+
+                        <p class="card-text">
+                            <a href="#art-102">Art. 102</a><br />
+                            Viene chiarito in modo esplicito che le carriere dei
+                            magistrati giudicanti e requirenti sono separate.
+                        </p>
+
+                        <p class="card-text">
+                            <a href="#art-104">Art. 104</a><br />
+                            L'articolo è riscritto per istituire due Consigli
+                            Superiori della Magistratura distinti: uno per i
+                            magistrati giudicanti e uno per i magistrati
+                            requirenti. Il presidente della Repubblica continua
+                            a presiedere entrambi i Consigli, e ne fanno parte
+                            di diritto il primo presidente e il procuratore
+                            generale della Corte di Cassazione (rispettivamente
+                            per il Consiglio giudicante e per quello
+                            requirente).<br />
+                            La composizione di ciascun Consiglio prevede che un
+                            terzo dei membri sia estratto a sorte da un elenco
+                            compilato dal Parlamento, mentre i due terzi sono
+                            scelti a sorte tra i magistrati dei rispettivi
+                            gruppi (delegando a la legge ordinaria la
+                            definizione delle modalità di selezione).
+                        </p>
+
+                        <p class="card-text">
+                            <a href="#art-105">Art. 105</a><br />
+                            L'articolo riduce le competenze dei Consigli
+                            Superiori della Magistratura perché trasferisce la
+                            giurisdizione disciplinare su entrambe le categorie
+                            di magistrati all'Alta Corte disciplinare.<br />
+                            L'Alta Corte disciplinare è un nuovo organo
+                            costituzionale formato da 15 membri, di cui 3
+                            nominati dal Presidente della Repubblica, 3 estratti
+                            a sorte da un elenco predisposto dal Parlamento
+                            (tutti e 6 tra professori ordinari di università in
+                            materie giuridiche e avvocati con almeno 20 anni di
+                            esercizio), 6 magistrati giudicanti e 3 magistrati
+                            requirenti estratti a sorte tra gli appartenenti
+                            alle rispettive categorie con almeno 20 anni di
+                            servizio.<br />
+                        </p>
+
+                        <p class="card-text">
+                            <a href="#art-106">Art. 106</a><br />
+                            L'articolo prevede che il CSM giudicante possa
+                            designare anche magistrati della carriera giudicante
+                            (con almeno 15 anni di servizio) per l'ufficio di
+                            consiglieri di cassazione, ampliando così il bacino
+                            di selezione.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dichiarazioni Politiche -->
+            <div class="mt-5">
+                <h2 class="text-center">
+                    <i class="fas fa-bullhorn me-2"></i>
+                    Le voci della Politica
+                </h2>
+                <div class="mt-5">
+                    <div class="row g-4 pt-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm pt-3">
+                                <div class="text-center">
+                                    <img
+                                        src="https://yt3.googleusercontent.com/ytc/AIdro_nXGsuP8J-rtFHPBs0ASCDERDE5AOBikt1gatre5rygQA=s160-c-k-c0x00ffffff-no-rj"
+                                        class="party-avatar"
+                                        alt="Logo Partito Democratico" />
+                                </div>
+                                <div class="card-body party-card-body">
+                                    <h5 class="card-title">
+                                        Elly Schlein <br />
+                                        <small class="text-muted fs-6">
+                                            (Partito Democratico)
+                                        </small>
+                                    </h5>
+                                    <p class="card-text mt-3">
+                                        "Questa non è una riforma della
+                                        giustizia, non tocca nessuno dei nodi
+                                        cruciali, [...] non interverrà sulla
+                                        lunghezza dei processi, sullo scarso
+                                        ricorso alle misure alternative, sul
+                                        sovraffollamento carcerario. [...]
+                                        <b>
+                                            L'obiettivo è un altro: indebolire
+                                            l'indipendenza della magistratura
+                                            perché sia più assoggettata al
+                                            potere di chi governa
+                                        </b>
+                                        "
+                                    </p>
+
+                                    <a
+                                        href="https://partitodemocratico.it/schlein-non-e-una-riforma-della-giustizia-serve-solo-a-dire-che-la-legge-non-e-uguale-per-tutti/"
+                                        class="source-link mt-3">
+                                        <i
+                                            class="fas fa-external-link-alt me-1"></i>
+                                        Fonte: Partito Democratico
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm pt-3">
+                                <div class="text-center">
+                                    <img
+                                        src="https://yt3.ggpht.com/KZ1R90nkz-oNwOeo6VV8dnV1B-zkHiLPAc5sb8l_VZv5UkiFR8Q2Wb-c7bRJ2KXmytKLeRMc7g=s176-c-k-c0x00ffffff-no-rj-mo"
+                                        class="party-avatar"
+                                        alt="Logo Fratelli d'Italia" />
+                                </div>
+                                <div class="card-body party-card-body">
+                                    <h5 class="card-title">
+                                        Giorgia Meloni <br />
+                                        <small class="text-muted fs-6">
+                                            (Fratelli d'Italia)
+                                        </small>
+                                    </h5>
+                                    <p class="card-text mt-3">
+                                        "La riforma che introduce la separazione
+                                        delle carriere dei magistrati
+                                        rappresenta un'occasione storica per
+                                        avere una
+                                        <b>
+                                            giustizia più efficiente e più
+                                            giusta</b
+                                        >. [...] significa che se un giudice
+                                        domani dovesse sbagliare
+                                        <b>
+                                            si assumerà finalmente la
+                                            responsabilità
+                                        </b>
+                                        [...] una misura per
+                                        <b>
+                                            liberare la magistratura dalle
+                                            correnti politicizzate
+                                        </b>
+                                        e valorizzare il merito"
+                                    </p>
+
+                                    <a
+                                        href="https://tg24.sky.it/politica/2025/10/30/giorgia-meloni-riforma-giustizia-ponte-messina-manovra"
+                                        class="source-link mt-3">
+                                        <i
+                                            class="fas fa-external-link-alt me-1"></i>
+                                        Fonte: Sky TG24
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm pt-3">
+                                <div class="text-center">
+                                    <img
+                                        src="https://yt3.googleusercontent.com/PBt7S1Ug8Ne5RK1zTyAIbxLqJS9S0LGMXKuBTTn78sHXT3SInNnwyT6nQ2SnNQzsvnGRryhjKtU=s160-c-k-c0x00ffffff-no-rj-mo"
+                                        class="party-avatar"
+                                        alt="Logo Ora!" />
+                                </div>
+                                <div class="card-body party-card-body">
+                                    <h5 class="card-title">
+                                        Michele Boldrin <br />
+                                        <small class="text-muted fs-6">
+                                            (Ora!)
+                                        </small>
+                                    </h5>
+                                    <p class="card-text mt-3">
+                                        La nostra posizione è:
+                                        <b>sì, ma meglio</b>.<br />
+                                        Sì, perché la direzione è giusta e il
+                                        problema che affronta è reale. Ma
+                                        meglio, perché [...] apre uno spazio che
+                                        deve essere riempito con
+                                        <b>
+                                            regole attuative coerenti,
+                                            trasparenti e pluraliste</b
+                                        >. Se quello spazio viene lasciato a
+                                        metà o gestito male, il rischio è che
+                                        sia occupato da nuove opacità, invece
+                                        che da nuove garanzie
+                                    </p>
+
+                                    <a
+                                        href="https://ora-italia.it/referendum-giustizia-si-ma-meglio/"
+                                        class="source-link mt-3">
+                                        <i
+                                            class="fas fa-external-link-alt me-1"></i>
+                                        Fonte: Ora!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm pt-3">
+                            <div class="text-center">
+                                <img src="https://yt3.googleusercontent.com/ytc/AIdro_m0NMiSYjklU3XQ2YYYRvO3DJkm7YwjOdYhZkffxqgwUIU=s176-c-k-c0x00ffffff-no-rj-mo"
+                                    class="party-avatar" alt="Logo Lega Salvini Premier">
+                            </div>
+                            <div class="card-body party-card-body">
+                                <h5 class="card-title">Matteo Salvini <br><small class="text-muted fs-6">(Lega)</small>
+                                </h5>
+                                <p class="card-text mt-3">Ma quando mai salvenee dice qualcosa di intelligente!?</p>
+
+                                <a href="#" class="source-link mt-3">
+                                    <i class="fas fa-external-link-alt me-1"></i>Fonte dichiarazione
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm pt-3">
+                            <div class="text-center">
+                                <img src="https://yt3.ggpht.com/T9UzYoJf2IsxbQUHvRXN8XhOssKTtnHjMDamVOjlXZjK5rQ7vA6nKAn0O5Hm40yiHgwmkBTZ_A=s176-c-k-c0x00ffffff-no-rj-mo"
+                                    class="party-avatar" alt="Logo Forza Italia">
+                            </div>
+                            <div class="card-body party-card-body">
+                                <h5 class="card-title">Antonio Tajani <br><small class="text-muted fs-6">(Forza
+                                        Italia)</small></h5>
+                                <p class="card-text mt-3">Trullallero trullallà</p>
+
+                                <a href="#" class="source-link mt-3">
+                                    <i class="fas fa-external-link-alt me-1"></i>Fonte dichiarazione
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm pt-3">
+                            <div class="text-center">
+                                <img src="https://yt3.ggpht.com/PdfcsUa_EjPuX1iEnTDP-R5iOLzv4v9M33d_hXBpcBpwn0-Da2i9pDB3rVVNaOtqsgdO1yTHUA=s176-c-k-c0x00ffffff-no-rj-mo"
+                                    class="party-avatar" alt="Logo Alleanza Verdi Sinistra">
+                            </div>
+                            <div class="card-body party-card-body">
+                                <h5 class="card-title">Angelo Bonelli <br><small class="text-muted fs-6">(Alleanza Verdi
+                                        Sinistra)</small>
+                                </h5>
+                                <p class="card-text mt-3">Trullallero trullallà</p>
+
+                                <a href="#" class="source-link mt-3">
+                                    <i class="fas fa-external-link-alt me-1"></i>Fonte dichiarazione
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm pt-3">
+                                <div class="text-center">
+                                    <img
+                                        src="https://yt3.ggpht.com/WaRAEJ_6V8sbShEFt1Lyd6cfprVFXqnxP9EBR5sTa4BoDaAfIyft1eu3IscIH5I-l6C2gkHlfw=s176-c-k-c0x00ffffff-no-rj-mo"
+                                        class="party-avatar"
+                                        alt="Logo Azione" />
+                                </div>
+                                <div class="card-body party-card-body">
+                                    <h5 class="card-title">
+                                        Carlo Calenda <br />
+                                        <small class="text-muted fs-6">
+                                            (Azione)
+                                        </small>
+                                    </h5>
+                                    <p class="card-text mt-3">
+                                        Votiamo la separazione perché riteniamo
+                                        che
+                                        <b>
+                                            il sistema delle correnti inquini
+                                            l'autonomia della magistratura
+                                        </b>
+                                        e la sua autorevolezza e perché
+                                        <b>
+                                            la separazione tra Pm e giudice è
+                                            una battaglia liberale e di civiltà
+                                        </b>
+                                        [...] Non parteciperemo e non faremo
+                                        comitati referendari
+                                    </p>
+
+                                    <a
+                                        href="https://pagellapolitica.it/articoli/partiti-opposizione-divisi-riforma-referendum-giustizia-separazione-carriere-magistrati"
+                                        class="source-link mt-3">
+                                        <i
+                                            class="fas fa-external-link-alt me-1"></i>
+                                        Fonte: Pagella Politica
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm pt-3">
+                                <div class="text-center">
+                                    <img
+                                        src="https://yt3.googleusercontent.com/Gq0rnNBFniiqahhL6WjL7QdYB1zeCziN9R_i7MQtUgjTaHok-Z_wrK-87g6cmRIZ4x1kvMC5=s160-c-k-c0x00ffffff-no-rj"
+                                        class="party-avatar"
+                                        alt="Logo Movimento 5 Stelle" />
+                                </div>
+                                <div class="card-body party-card-body">
+                                    <h5 class="card-title">
+                                        Giuseppe Conte <br />
+                                        <small class="text-muted fs-6">
+                                            (M5S)
+                                        </small>
+                                    </h5>
+                                    <p class="card-text mt-3">
+                                        "[...] un disegno di scardinamento della
+                                        Costituzione [..]
+                                        <b>
+                                            Non è uno scontro tra destra e
+                                            sinistra
+                                        </b>
+                                        ma tra chi vuole difendere i pilastri
+                                        della Costituzione e chi vuole il
+                                        governo sopra la legge."
+                                    </p>
+
+                                    <a
+                                        href="https://tg24.sky.it/politica/approfondimenti/separazione-carriere-giustizia-come-funziona"
+                                        class="source-link mt-3">
+                                        <i
+                                            class="fas fa-external-link-alt me-1"></i>
+                                        Fonte: Sky TG24
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm pt-3">
+                                <div class="text-center">
+                                    <img
+                                        src="https://yt3.ggpht.com/zSWnRifUOiDmJrAZZrdkNcn0PVCuxjecV4zNk37riX_Hyl8Qlv4wmXaaWJb3c4I9KMDicdnS=s176-c-k-c0x00ffffff-no-rj-mo"
+                                        class="party-avatar"
+                                        alt="Logo Associazione Nazionale Magistrati" />
+                                </div>
+                                <div class="card-body party-card-body">
+                                    <h5 class="card-title">
+                                        Comunicato ANM <br />
+                                        <small class="text-muted fs-6">
+                                            (Associazione Nazionale Magistrati)
+                                        </small>
+                                    </h5>
+                                    <p class="card-text mt-3">
+                                        La riforma in discussione incide sul
+                                        cuore stesso della funzione
+                                        giurisdizionale.
+                                        <b>
+                                            L'Alta Corte disciplinare [...] è
+                                            uno strumento di condizionamento dei
+                                            magistrati</b
+                                        >; la separazione delle carriere
+                                        indebolisce il giudice e avvicina il
+                                        pubblico ministero al potere esecutivo
+                                        [...] il sorteggio dei componenti togati
+                                        del Consiglio Superiore della
+                                        <b>
+                                            Magistratura svuota la
+                                            rappresentanza democratica
+                                        </b>
+                                        e altera gli equilibri in favore della
+                                        componente politica
+                                    </p>
+
+                                    <a
+                                        href="https://www.associazionemagistrati.it/doc/4952/assemblea-straordinaria-generale-dei-soci-il-documento-unitario-approvato.htm"
+                                        class="source-link mt-3">
+                                        <i
+                                            class="fas fa-external-link-alt me-1"></i>
+                                        Fonte: Associazione Nazionale Magistrati
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commenti -->
+            <div class="comment-section mt-5">
+                <h2 class="text-center mb-5">
+                    <i class="fas fa-comments me-2"></i>
+                    Commenti sulla riforma
+                </h2>
+                <h3 class="mb-4">Considerazioni generali</h3>
+                <p>
+                    La scelta su come votare a questo referendum costituzionale
+                    è complessa, perché richiede una valutazione su due piani
+                    distinti ma intrecciati:
+                </p>
+                <ul>
+                    <li>
+                        <b>un piano valoriale</b>, relativo a quale modello di
+                        giustizia si ritenga preferibile per il Paese;
+                    </li>
+                    <li>
+                        <b>un piano tecnico-istituzionale</b>, che riguarda le
+                        conseguenze concrete della riforma sull'organizzazione
+                        della magistratura.
+                    </li>
+                </ul>
+                <p>
+                    Il dibattito pubblico che accompagna il referendum,
+                    tuttavia, risulta spesso poco edificante. Il confronto tra i
+                    principali leader politici è caratterizzato da toni confusi
+                    e contraddittori, che danno l'impressione di una
+                    contrapposizione sterile piuttosto che di un confronto serio
+                    tra visioni diverse della giustizia.
+                </p>
+                <p>
+                    Nonostante alcune dichiarazioni, come quella di Giuseppe
+                    Conte secondo cui non si tratterebbe di uno scontro tra
+                    destra e sinistra, di fatto si sono formati due fronti
+                    politici ben riconoscibili: la maggioranza di governo e
+                    l'opposizione. È però importante chiarire un punto
+                    essenziale:
+                    <b>
+                        l'esito del referendum non ha conseguenze dirette sulla
+                        sopravvivenza del governo</b
+                    >. A differenza del referendum costituzionale del 2016,
+                    quando Matteo Renzi aveva legato il proprio mandato
+                    all'esito del voto, in questo caso non esiste alcun impegno
+                    analogo. Pertanto, l'idea che votare "No" equivalga a far
+                    cadere il governo è infondata.
+                </p>
+                <p>
+                    Quanto segue è una sintesi delle principali argomentazioni a
+                    favore e contro la riforma, selezionate e riorganizzate per
+                    quanto possibile al di fuori della confusione del dibattito
+                    pubblico.
+                </p>
+
+                <hr class="my-4" />
+
+                <!-- Ragioni del Sì -->
+                <h3 class="mb-4">Ragioni a favore del Sì</h3>
+                <p>
+                    I promotori della riforma individuano due obiettivi
+                    principali:
+                </p>
+                <ol>
+                    <li>
+                        la separazione netta tra magistratura giudicante e
+                        magistratura requirente;
+                    </li>
+                    <li>
+                        un sistema di autogoverno e di valutazione dei
+                        magistrati più trasparente e meno esposto a
+                        condizionamenti politici e correntizi.
+                    </li>
+                </ol>
+                <h4 class="mt-4">Separazione delle carriere</h4>
+                <p>
+                    La separazione delle <i>carriere</i> tra magistratura
+                    giudicante e requirente non è un principio universalmente
+                    adottato: alcuni ordinamenti, come Francia e Germania, la
+                    prevedono, mentre altri, tra cui l'Italia e la Romania,
+                    storicamente no. In Italia, tuttavia, la riforma Cartabia ha
+                    già limitato in modo significativo il passaggio da una
+                    <i>funzione</i> all'altra, imponendo, tra l'altro, il cambio
+                    di sede. Nella pratica, i passaggi di ruolo coinvolgono oggi
+                    <a
+                        href="https://www.csm.it/portale/web/csm-internet/w/la-valutazione-di-professionalit%C3%A0-dei-magistrati-copia-">
+                        circa lo 0,3% dei magistrati
+                    </a>
+                    all'anno.
+                </p>
+                <p>
+                    La riforma costituzionale, quindi, non inciderebbe in modo
+                    sostanziale sulla situazione attuale, ma
+                    <b>
+                        formalizzerebbe a livello costituzionale un principio
+                        già di fatto esistente</b
+                    >. Secondo i sostenitori del Sì, questo avrebbe un valore
+                    simbolico e sostanziale: chiarire che
+                    <b>
+                        il giudice deve essere pienamente terzo rispetto a chi
+                        indaga</b
+                    >, rafforzando la percezione di imparzialità e indipendenza
+                    della magistratura giudicante.
+                </p>
+                <p>
+                    In tutte le democrazie liberali, infatti, la terzietà del
+                    giudice è considerata una garanzia fondamentale per i
+                    cittadini. Un esempio spesso richiamato è quello delle
+                    <a
+                        href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.Presidente.della.Repubblica:1988-09-22;447~art276!vig=">
+                        intercettazioni</a
+                    >: il pubblico ministero non può disporle autonomamente, ma
+                    deve ottenere l'autorizzazione di un giudice che valuti la
+                    presenza di presupposti sufficienti e se ne assuma la
+                    responsabilità. Questo meccanismo è già previsto
+                    dall'ordinamento italiano, ma la separazione formale delle
+                    carriere renderebbe ancora più chiaro che si tratta di
+                    funzioni diverse, pur entrambe riconducibili alla
+                    magistratura.
+                </p>
+                <h4 class="mt-4">
+                    Separazione e riforma dei Consigli Superiori della
+                    Magistratura
+                </h4>
+                <p>
+                    La creazione di due CSM distinti viene ritenuta coerente con
+                    la separazione delle carriere. Secondo i promotori della
+                    riforma, un CSM unico potrebbe favorire interferenze
+                    reciproche: ad esempio, un magistrato requirente interessato
+                    a passare alla funzione giudicante potrebbe essere indotto a
+                    comportamenti opportunistici. Con due organi separati,
+                    questo rischio verrebbe eliminato.
+                </p>
+                <p>
+                    Un altro punto centrale riguarda la composizione dei CSM.
+                    L'attuale sistema, basato in larga parte sull'elezione dei
+                    membri da parte degli stessi magistrati, era stato concepito
+                    per garantire l'indipendenza dal potere esecutivo. Nel
+                    tempo, però, ha favorito la nascita di correnti organizzate,
+                    spesso assimilabili a vere e proprie fazioni politiche
+                    interne alla magistratura, che incidono sulle nomine e sulle
+                    carriere.
+                </p>
+                <p>
+                    Il caso di Luca Palamara, ex presidente dell'Associazione
+                    Nazionale Magistrati coinvolto in uno scandalo legato alle
+                    nomine al CSM, viene spesso citato come esempio di queste
+                    distorsioni. Secondo tali critiche, l'estrazione a sorte dei
+                    componenti (sia tra i magistrati sia tra i membri indicati
+                    dal Parlamento) ridurrebbe il peso delle correnti e delle
+                    logiche di appartenenza, pur senza eliminare del tutto la
+                    dimensione politica, ritenuta inevitabile.
+                </p>
+                <p>
+                    Va inoltre ricordato che anche l'attuale CSM prevede una
+                    quota di membri di nomina parlamentare (un terzo), ma
+                    eletti. L'introduzione del sorteggio anche per questi membri
+                    renderebbe, secondo i sostenitori del Sì, più difficile per
+                    i partiti esercitare un controllo diretto sull'organo di
+                    autogoverno della magistratura, restando coerenti con il
+                    principio costituzionale secondo cui la magistratura è un
+                    ordine autonomo e indipendente da ogni altro potere.
+                </p>
+                <h4 class="mt-4">Valutazione e disciplina dei magistrati</h4>
+                <p>
+                    Un'ulteriore critica al sistema vigente riguarda l'effettiva
+                    incisività delle valutazioni di professionalità. Secondo
+                    molti sostenitori del Sì, le dinamiche correntizie avrebbero
+                    progressivamente attenuato il carattere selettivo di tali
+                    valutazioni, tanto che la quasi totalità dei magistrati
+                    ottiene giudizi positivi, senza che ciò corrisponda
+                    necessariamente a un livello elevato di competenza e rigore
+                    professionale, come suggerirebbero anche i dati relativi
+                    alle
+                    <a
+                        href="https://www.ilsole24ore.com/art/calano-azioni-disciplinari-contro-magistrati-24-condanne-csm-AGiqwzdC">
+                        numerose
+                    </a>
+                    denunce disciplinari e alcuni recenti scandali giudiziari.
+                </p>
+                <p>
+                    In quest'ottica, l'attribuzione della funzione disciplinare
+                    a un organo autonomo e composito, quale l'Alta Corte
+                    disciplinare, dovrebbe assicurare maggiore imparzialità e
+                    rafforzare la credibilità del sistema. L'obiettivo
+                    dichiarato è quello di accrescere la responsabilità dei
+                    magistrati senza pregiudicarne l'indipendenza, anche alla
+                    luce della diversa composizione prevista: i membri di nomina
+                    parlamentare passerebbero infatti da un terzo dell'attuale
+                    CSM a un quinto, selezionato tramite sorteggio, nella nuova
+                    Alta Corte.
+                </p>
+
+                <hr class="my-4" />
+
+                <!-- Ragioni del No -->
+                <h3 class="mb-4">Ragioni a favore del No</h3>
+                <p>
+                    I sostenitori del No ritengono la riforma non solo
+                    superflua, ma potenzialmente dannosa. A loro avviso, la
+                    riforma Cartabia ha già affrontato in modo adeguato il tema
+                    della separazione delle funzioni, rendendo inutile un
+                    intervento costituzionale.
+                </p>
+                <h4 class="mt-4">Rischio di aumento dell'influenza politica</h4>
+                <p>
+                    La preoccupazione principale riguarda il possibile aumento
+                    dell'influenza della politica sulla magistratura. Pur non
+                    ipotizzando un modello simile a quello
+                    <a
+                        href="https://ballotpedia.org/Judicial_selection_in_the_states">
+                        statunitense</a
+                    >, in cui i giudici sono nominati direttamente da organi
+                    politici, i critici temono che le nuove regole sulla
+                    composizione dei CSM e dell'Alta Corte disciplinare possano
+                    indebolire l'autonomia della magistratura.
+                </p>
+                <p>
+                    Secondo questa prospettiva, i membri eletti dai magistrati
+                    garantiscono oggi competenza e autorevolezza, mentre
+                    l'estrazione a sorte potrebbe portare alla selezione di
+                    figure meno preparate o meno forti sul piano istituzionale,
+                    rendendole più vulnerabili alle pressioni dei membri di
+                    nomina parlamentare.
+                </p>
+                <h4 class="mt-4">
+                    Eccessivo rinvio alla legislazione ordinaria
+                </h4>
+                <p>
+                    Un'altra critica riguarda il fatto che molti aspetti
+                    decisivi della riforma vengono demandati a leggi ordinarie.
+                    Ad esempio, non è definito in Costituzione il numero di
+                    candidati da cui il Parlamento dovrebbe estrarre a sorte i
+                    membri dei CSM. Se tali liste fossero molto ristrette, il
+                    sorteggio rischierebbe di diventare una formalità, svuotata
+                    di reale significato.
+                </p>
+                <h4 class="mt-4">
+                    Funzione disciplinare e coerenza del sistema
+                </h4>
+                <p>
+                    Infine, viene messa in discussione la scelta di sottrarre ai
+                    CSM la competenza disciplinare per affidarla a un'unica Alta
+                    Corte. I critici si chiedono quale sia la logica di separare
+                    carriere e CSM, per poi concentrare la disciplina di
+                    entrambe le categorie in un solo organo, composto da membri
+                    provenienti da entrambe le funzioni.
+                </p>
+                <p>
+                    Si sollevano inoltre interrogativi sui criteri di
+                    valutazione, in particolare per i magistrati requirenti: ad
+                    esempio, se il numero di condanne ottenute possa diventare
+                    un parametro implicito, con il rischio di incentivare
+                    comportamenti eccessivamente aggressivi e un aumento degli
+                    errori giudiziari.
+                </p>
+
+                <hr class="my-4" />
+
+                <!-- Approfondimento -->
+                <h3 class="mb-4">Approfondimento</h3>
+                <p>
+                    Come anticipato nel capitolo introduttivo, una parte
+                    rilevante delle argomentazioni che circolano nel dibattito
+                    pubblico sulla riforma risulta, nel migliore dei casi,
+                    imprecisa e, nel peggiore, apertamente fuorviante. Le
+                    considerazioni sintetizzate nei paragrafi precedenti sono
+                    state selezionate perché appaiono più solide, coerenti e
+                    meritevoli di attenzione rispetto alla confusione generale
+                    che caratterizza il confronto mediatico.
+                </p>
+                <p>
+                    È tuttavia opportuno sottolineare che non ci si trova di
+                    fronte a una scelta destinata a produrre un cambiamento
+                    radicale dell'assetto istituzionale del Paese. I promotori
+                    del Sì tendono a presentare la riforma come una
+                    <b>battaglia di principio</b>, mentre tra i sostenitori del
+                    No è diffusa l'opinione che si tratti di un
+                    <b>intervento superfluo</b>, che non avrebbe nemmeno
+                    richiesto un dibattito referendario. Ciò nonostante, il
+                    referendum è ormai indetto e la partecipazione al voto
+                    rappresenta comunque un dovere civico e una responsabilità
+                    nei confronti della democrazia.
+                </p>
+                <h4 class="mt-4">Natura della scelta referendaria</h4>
+                <p>
+                    Contrariamente a quanto spesso sostenuto da entrambe le
+                    parti, <b>questo referendum non è tecnico</b> nel senso
+                    stretto del termine. Per esprimere un voto consapevole non è
+                    necessario possedere competenze specialistiche in diritto
+                    costituzionale o nell'organizzazione della magistratura. La
+                    decisione riguarda piuttosto una
+                    <b>
+                        valutazione politica e valoriale sul modello di
+                        giustizia
+                    </b>
+                    che si ritiene più adeguato per il Paese.
+                </p>
+                <p>
+                    Un esempio significativo è la critica avanzata dai
+                    sostenitori del No secondo cui i membri estratti a sorte
+                    sarebbero mediamente meno competenti rispetto a quelli
+                    eletti. Questa non è una dimostrazione oggettiva o
+                    matematica: non esistono elementi che consentano di provarla
+                    in modo definitivo. Si tratta piuttosto di una percezione o
+                    di una valutazione soggettiva. Allo stesso tempo, vi è chi
+                    sostiene una posizione opposta, ritenendo che un magistrato
+                    considerato sufficientemente competente per esercitare
+                    funzioni giurisdizionali, anche con effetti rilevanti sulla
+                    libertà personale dei cittadini, non possa essere ritenuto
+                    inadeguato a ricoprire un incarico nel Consiglio Superiore
+                    della Magistratura.
+                </p>
+                <h4 class="mt-4">
+                    Rinvio alla legislazione ordinaria e fiducia nelle
+                    istituzioni
+                </h4>
+                <p>
+                    Un'altra questione frequentemente sollevata riguarda l'ampio
+                    rinvio alla legislazione ordinaria per la definizione di
+                    aspetti centrali della riforma. Anche in questo caso, il
+                    nodo principale è rappresentato dal livello di fiducia nelle
+                    istituzioni.
+                </p>
+                <p>
+                    Chi propende per il Sì ritiene che i vincoli fissati dalla
+                    Costituzione, come ad esempio il requisito di una lunga
+                    esperienza professionale per i magistrati chiamati a
+                    ricoprire determinati incarichi (oltre alla riaffermazione
+                    del principio di indipendenza della magistratura), siano
+                    sufficienti a definire l'impianto fondamentale della
+                    riforma. Alla legislazione ordinaria spetterebbe quindi il
+                    compito di specificarne i dettagli meramente applicativi.
+                </p>
+                <p>
+                    Chi sostiene il No, al contrario, giudica questi vincoli
+                    insufficienti e teme che una regolamentazione demandata
+                    eccessivamente alla legge ordinaria possa svuotare la
+                    riforma di contenuto o snaturarne gli obiettivi. Tuttavia,
+                    al di là dell'esempio frequentemente citato relativo alla
+                    possibile ristrettezza delle liste da cui effettuare il
+                    sorteggio, che rischierebbe di renderlo solo formale, non
+                    vengono spesso forniti ulteriori esempi concreti. In assenza
+                    di casi specifici, risulta difficile valutare in modo
+                    preciso la portata effettiva di tale rischio.
+                </p>
+                <h4 class="mt-4">
+                    Influenza della politica e assetto istituzionale
+                </h4>
+                <p>
+                    Il tema dell'influenza politica sulla magistratura richiede
+                    particolare attenzione e una chiara distinzione tra i
+                    diversi soggetti istituzionali coinvolti. Il Presidente
+                    della Repubblica, il Governo e il Parlamento sono organi
+                    distinti, con ruoli e funzioni differenti.
+                </p>
+                <p>
+                    Attribuire automaticamente una connotazione politica ai
+                    magistrati nominati dal Presidente della Repubblica, ad
+                    esempio per l'Alta Corte disciplinare, implica una messa in
+                    discussione del ruolo stesso del Capo dello Stato come
+                    garante della Costituzione e figura di equilibrio
+                    dell'ordinamento. Inoltre, è opportuno ricordare che il
+                    Governo non è mai indicato come soggetto competente alla
+                    nomina dei membri dei CSM o dell'Alta Corte disciplinare:
+                    tale competenza è attribuita al Parlamento.
+                </p>
+                <p>
+                    È vero che i parlamentari appartengono a forze politiche e
+                    possono subire influenze dai rispettivi leader o ministri,
+                    ma essi mantengono una propria autonomia decisionale. Questo
+                    è uno dei presupposti fondamentali dell'istituzione
+                    parlamentare: un organo collegiale e numeroso, composto da
+                    individui chiamati a deliberare secondo coscienza. La prassi
+                    politica quotidiana dimostra, del resto, che i parlamentari
+                    non sempre seguono rigidamente le indicazioni di partito,
+                    dando vita a correnti interne, gruppi autonomi o, in alcuni
+                    casi, a vere e proprie scissioni.
+                </p>
+                <h4 class="mt-4">Responsabilità e tutela dei magistrati</h4>
+                <p>
+                    La questione della punibilità dei magistrati rappresenta un
+                    tema particolarmente delicato. È comprensibile ritenere che
+                    l'assenza di un'effettiva responsabilità possa ridurre gli
+                    incentivi a svolgere il proprio lavoro con la massima
+                    attenzione, alimentando la percezione di una protezione
+                    corporativa.
+                </p>
+                <p>
+                    D'altro canto, va riconosciuto che
+                    <b>
+                        alcune categorie professionali necessitano di forme di
+                        tutela specifiche</b
+                    >, proprio per poter svolgere correttamente funzioni
+                    caratterizzate da un elevato grado di discrezionalità e
+                    responsabilità. Un esempio frequentemente richiamato è
+                    quello dei medici. Essi operano seguendo protocolli e linee
+                    guida, ma non possono prevedere ogni possibile evoluzione
+                    clinica. Un esito negativo, se avvenuto nonostante il
+                    rispetto delle buone pratiche, non può automaticamente
+                    tradursi in una sanzione. Ciò non implica un'immunità
+                    generalizzata: in presenza di negligenza o imperizia, la
+                    responsabilità rimane pienamente configurabile.
+                </p>
+                <p>
+                    La logica della protezione professionale risponde anche
+                    all'esigenza di evitare comportamenti distorsivi. Così come
+                    sarebbe irragionevole immaginare un medico che prescrive
+                    trattamenti eccessivi per timore di sanzioni, allo stesso
+                    modo è necessario evitare che il timore di conseguenze
+                    personali induca decisioni non ottimali. La tutela, in
+                    questo senso, non è un privilegio, ma uno strumento
+                    funzionale al corretto esercizio della funzione.
+                </p>
+
+                <p class="card-text text-muted fst-italic">
+                    * Questa sezione verrà aggiornata nel tempo; alcuni dati non
+                    sono ancora verificati.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="border-top mt-5 py-4 bg-light">
+            <div class="container text-center text-muted small">
+                <p class="mb-2">
+                    <i class="fa-solid fa-code me-1 text-info"></i>
+                    Made by
+                    <a
+                        href="https://github.com/ValerioCeccarelli"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-decoration-none text-info fw-semibold">
+                        Valerio Ceccarelli
+                    </a>
+                </p>
+
+                <p class="mb-3">
+                    <i class="fa-solid fa-robot me-1 text-info"></i>
+                    With the help of
+                    <a
+                        href="https://gemini.google/it/about"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-decoration-none text-info">
+                        Gemini
+                    </a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Bundle with Popper (JS) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            xintegrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
