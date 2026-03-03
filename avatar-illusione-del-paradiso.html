@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>L'illusione del paradiso senza progresso</title>
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Avatar: L'illusione del paradiso senza progresso" />
+        <meta
+            property="og:description"
+            content="Perché i Na'vi non hanno mai sviluppato una tecnologia avanzata?" />
+        <meta
+            property="og:image"
+            content="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2000" />
+        <meta property="og:type" content="article" />
+
+        <!-- Bootstrap 5 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            xintegrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+
+        <!-- Font Awesome for Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+        <style>
+            :root {
+                --pandora-dark: #0b1a2a;
+                --pandora-blue: #1a4d6e;
+                --pandora-accent: #4fc3f7;
+                --text-main: #333;
+            }
+
+            body {
+                background-color: #f8f9fa;
+                color: var(--text-main);
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.7;
+            }
+
+            .blog-header {
+                background:
+                    linear-gradient(
+                        rgba(11, 26, 42, 0.8),
+                        rgba(11, 26, 42, 0.8)
+                    ),
+                    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2000");
+                background-size: cover;
+                background-position: center;
+                color: white;
+                padding: 80px 0;
+                margin-bottom: 50px;
+                border-bottom: 5px solid var(--pandora-accent);
+            }
+
+            .article-container {
+                max-width: 850px;
+                background: white;
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                margin-top: -80px;
+            }
+
+            .ig-post-card {
+                background-color: #f1f5f9;
+                border-left: 5px solid #e1306c;
+                /* Instagram Color */
+                border-radius: 8px;
+                padding: 25px;
+                margin: 40px 0;
+            }
+
+            .ig-link {
+                color: #e1306c;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .ig-link:hover {
+                text-decoration: underline;
+            }
+
+            .quote-icon {
+                font-size: 2rem;
+                color: #dee2e6;
+                margin-bottom: 10px;
+            }
+
+            .quote-text.is-hidden {
+                display: none;
+            }
+
+            .translate-btn {
+                border: 0;
+                background: transparent;
+                color: #6c757d;
+                font-weight: 600;
+                padding: 0;
+            }
+
+            .translate-btn:hover {
+                text-decoration: underline;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: var(--pandora-dark);
+                font-weight: 700;
+            }
+
+            .first-paragraph {
+                font-size: 1.25rem;
+                color: #555;
+                border-left: 4px solid var(--pandora-accent);
+                padding-left: 20px;
+                margin-bottom: 30px;
+            }
+
+            .section-divider {
+                height: 2px;
+                background: #eee;
+                margin: 40px 0;
+            }
+
+            footer {
+                background: #fff;
+            }
+
+            .badge-tech {
+                background-color: var(--pandora-blue);
+                color: white;
+                font-size: 0.8rem;
+                padding: 5px 12px;
+                border-radius: 20px;
+                margin-bottom: 15px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="blog-header text-center">
+            <div class="container">
+                <h1 class="display-4" style="color: #429dff">
+                    L'illusione del paradiso senza progresso
+                </h1>
+                <p class="lead">
+                    Perché i Na'vi non hanno mai sviluppato una tecnologia
+                    avanzata?
+                </p>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 article-container mb-5">
+                    <!-- Primo Paragrafo -->
+                    <div class="first-paragraph">
+                        Di recente mi è capitato sotto gli occhi un post su
+                        Instagram che poneva una domanda apparentemente
+                        interessante:
+                        <em>
+                            "Why the Na'vi from Avatar didn't ever develop
+                            advanced technology?"</em
+                        >. Di quelle domande che sai già, prima ancora di
+                        ascoltare la risposta, che possono portare o a un
+                        ragionamento stimolante oppure a una semplificazione
+                        colossale. Io speravo nella prima. Invece, come spesso
+                        succede, mi sono ritrovato a dovermi fare il
+                        ragionamento da solo.
+                    </div>
+
+                    <!-- Post Citato -->
+                    <div class="ig-post-card">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-3">
+                            <span
+                                class="text-uppercase fw-bold text-muted small"
+                                ><i class="fab fa-instagram me-2"></i>
+                                Contenuto Citato
+                            </span>
+                            <a
+                                href="https://www.instagram.com/reel/DTFB8GUjSPD/?igsh=MW1wYmkxYTcyOW4zbA%3D%3D"
+                                target="_blank"
+                                class="ig-link">
+                                Vedi il Reel originale
+                            </a>
+                        </div>
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <h5 class="quote-text quote-question-en mb-3" lang="en">
+                            "Why the Na'vi from Avatar didn't ever develop
+                            advanced technology?"
+                        </h5>
+                        <h5
+                            class="quote-text quote-question-it mb-3 is-hidden"
+                            lang="it">
+                            "Perché i Na'vi di Avatar non hanno mai sviluppato
+                            una tecnologia avanzata?"
+                        </h5>
+                        <p
+                            class="quote-text quote-text-en fst-italic text-secondary"
+                            lang="en">
+                            "The Na'vi from Avatar represent a vision of
+                            humanity before disconnection, a culture rooted in
+                            balance, respect, and deep relationship with the
+                            living world. They are not defined by domination or
+                            progress, but by harmony, intuition, and spiritual
+                            awareness, where every creature and place has
+                            meaning. What makes the Na'vi compelling is that
+                            they feel less like fantasy and more like a reminder
+                            of something lost. Through them, Avatar asks a quiet
+                            but powerful question about modern life: what did we
+                            trade away in the name of advancement, and what
+                            would it look like to live as part of a world
+                            instead of above it."
+                        </p>
+
+                        <p
+                            class="quote-text quote-text-it fst-italic text-secondary is-hidden"
+                            lang="it">
+                            "I Na'vi di Avatar rappresentano una visione
+                            dell'umanità prima della disconnessione: una cultura
+                            radicata nell'equilibrio, nel rispetto e in un
+                            rapporto profondo con il mondo vivente. Non sono
+                            definiti dalla dominazione o dal progresso, ma
+                            dall'armonia, dall'intuizione e da una
+                            consapevolezza spirituale, in cui ogni creatura e
+                            ogni luogo hanno significato. Ciò che rende i Na'vi
+                            così affascinanti è che sembrano meno una fantasia e
+                            più un promemoria di qualcosa che abbiamo perso.
+                            Attraverso di loro, Avatar pone una domanda
+                            silenziosa ma potente sulla vita moderna: cosa
+                            abbiamo scambiato in nome dell'avanzamento e che
+                            aspetto avrebbe vivere come parte di un mondo,
+                            invece che al di sopra di esso."
+                        </p>
+
+                        <div class="d-flex justify-content-end mt-3">
+                            <button
+                                type="button"
+                                class="translate-btn"
+                                id="toggle-quote-translation"
+                                aria-label="Mostra traduzione"
+                                aria-pressed="false">
+                                <i
+                                    class="fas fa-language me-1"
+                                    aria-hidden="true"></i>
+                                Traduci
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Resto del contenuto -->
+                    <div class="article-body">
+                        <p>
+                            Faccio una premessa doverosa. Non ho ancora visto
+                            <em>Avatar 3</em>, del secondo film ricordo poco,
+                            mentre il primo mi è rimasto abbastanza impresso. In
+                            più ho ben presente il videogioco di Avatar uscito
+                            di recente, perché lì interpreti direttamente un
+                            Na'vi e fai "cose da Na'vi": esplori, cacci,
+                            combatti. Lo dico subito: tutto quello che segue non
+                            tiene conto di eventi o rivelazioni del terzo film,
+                            di cui so solo per sentito dire che "succedono cose
+                            strane".
+                        </p>
+
+                        <p>
+                            Detto questo, Avatar è un'opera con un autore
+                            preciso. James Cameron ha in testa delle intenzioni
+                            chiare, dei messaggi che vuole trasmettere. Poi però
+                            ci sono tutti gli altri: il pubblico, chi fa
+                            contenuti online, chi sviluppa i videogiochi, che
+                            quelle intenzioni le interpretano e spesso le
+                            estremizzano. Nel gioco, ad esempio, viene spinta
+                            molto l'idea che i Na'vi rappresentino una società
+                            perfetta, in contrapposizione agli esseri umani
+                            visti come invasori avidi e bastardi. Era solo
+                            questione di tempo prima che mi arrivasse un post
+                            che cristallizzasse questa visione.
+                        </p>
+
+                        <p>
+                            Il post in questione dice più o meno questo: i Na'vi
+                            non sviluppano tecnologia avanzata perché vivono in
+                            armonia con la natura, sono spirituali, connessi a
+                            tutto ciò che li circonda, e non hanno mai perso
+                            quel legame primordiale che noi umani abbiamo
+                            sacrificato in nome del progresso. Letta così, suona
+                            pure bene. Il problema è che per capire se ha senso
+                            bisogna fare uno sforzo in più: entrare davvero nel
+                            mondo di Avatar e chiedersi come funziona, invece di
+                            fermarsi all'estetica e ai messaggi emotivi.
+                        </p>
+
+                        <p>
+                            Se accettiamo di stare su Pandora prima dell'arrivo
+                            degli umani, la verità è che sappiamo pochissimo
+                            della società Na'vi. <em>Avatar 1</em> è bravissimo
+                            a farci immedesimare nella loro causa (proteggersi
+                            dall'invasore), ma non ci mostra la loro
+                            quotidianità. Vediamo solo frammenti: il
+                            protagonista che viene addestrato, che impara usi e
+                            costumi, ma quella è una situazione completamente
+                            fuori dalla norma. Nella vita reale, quante volte la
+                            figlia del capo villaggio prende un adulto estraneo
+                            e lo porta a fare esperienze iniziatiche? Serve al
+                            film, certo, ma non basta per descrivere una
+                            società.
+                        </p>
+
+                        <h3 class="mt-5 mb-3">
+                            <i class="fas fa-question-circle me-2"></i
+                            >Approfondiamo
+                        </h3>
+                        <p>
+                            Se uno vuole capire davvero come vivono i Na'vi,
+                            dovrebbe rispondere ad almeno tre domande banali:
+                        </p>
+                        <ol class="list-group list-group-numbered mb-4">
+                            <li class="list-group-item">
+                                Cosa mangiano, al di là di quel singolo frutto
+                                che vediamo in decine di ore di film?
+                            </li>
+                            <li class="list-group-item">
+                                I vestiti che indossano - pochi, ma comunque
+                                presenti - chi li produce?
+                            </li>
+                            <li class="list-group-item">
+                                Come affrontano le malattie, che sappiamo
+                                esistere, ma che non vengono mai esplorate
+                                davvero?
+                            </li>
+                        </ol>
+
+                        <p>
+                            Dato che le informazioni mancano, siamo costretti a
+                            immaginare. Un po' mettendoci del nostro, un po'
+                            cercando di ricostruire quello che
+                            <em>chi fa questi post</em> probabilmente dà per
+                            scontato.
+                        </p>
+
+                        <p>
+                            È facile immaginare che i Na'vi siano
+                            cacciatori-raccoglitori. Pandora, dal nostro punto
+                            di vista umano, sembra un pianeta estremamente
+                            ostile, ma per loro evidentemente non lo è. Possono
+                            mangiare molti dei frutti locali, sanno quali
+                            raccogliere e quali evitare, e i cacciatori sono
+                            incredibilmente abili. Una delle prime scene di
+                            Avatar 1 mostra chiaramente che il protagonista
+                            umano, senza addestramento, sarebbe morto in pochi
+                            minuti, mentre una singola ragazza Na'vi gestisce
+                            quei predatori senza problemi. Inoltre, dato il loro
+                            rapporto con la natura, è plausibile che caccino e
+                            raccolgano solo ciò che serve al clan, nulla di più,
+                            per rispetto.
+                        </p>
+
+                        <p>
+                            Sui vestiti conviene essere onesti: girano al 90%
+                            nudi. Nella realtà probabilmente sarebbero nudi al
+                            100%, perché delle mutande che non proteggono né dal
+                            freddo né dal caldo servono a poco. Quello che
+                            indossano ha soprattutto una funzione ornamentale.
+                            Collane, perline, decorazioni: cose che hanno senso
+                            anche in una società umana, ma che non rispondono a
+                            bisogni di sopravvivenza.
+                        </p>
+
+                        <p>
+                            Sulle malattie, l'immaginario comune risolve tutto
+                            con "la natura provvede". Nel gioco e nel folklore
+                            possiamo immaginare Na'vi esperti di erbe curative,
+                            sciamani, guaritori. Ed è una visione su cui più o
+                            meno tutti sembrano allineati.
+                        </p>
+
+                        <p>
+                            Poi c'è la spiritualità. Eywa non è un dio
+                            monoteista come quelli a cui siamo abituati, ma una
+                            sorta di totalità: una forza vitale presente in ogni
+                            cosa (mi ricorda la Forza di Star Wars). Eywa non è
+                            solo una rete di connessione tra esseri viventi
+                            (Na'vi-animali, Na'vi-albero della vita, Na'vi-Na'vi
+                            <em>per le cose zozze</em>...), ma sembra anche
+                            avere un ruolo attivo. Nel finale di Avatar 1, tutti
+                            gli animali si coalizzano contro gli umani invasori:
+                            che siano controllati direttamente o solo "spinti",
+                            l'agente è sempre Eywa.
+                        </p>
+
+                        <p>
+                            Con queste premesse, è difficile non dire:
+                            <b>sì, sembra una società perfetta</b>.
+                        </p>
+
+                        <h2 class="mb-4">Considerazioni</h2>
+
+                        <p>
+                            Ci sono però alcune considerazioni sparse da fare.
+                        </p>
+
+                        <p>
+                            Senza telefoni o mezzi di comunicazione, due amici
+                            di clan diversi potrebbero non parlarsi per mesi,
+                            finché non si incontrano di nuovo. Il nostro gruppo
+                            di amici, così come lo intendiamo oggi, non potrebbe
+                            esistere. Certo, anche i nostri genitori da piccoli
+                            si <strong>accontentavano</strong> degli amici del
+                            quartiere: una scelta molto più limitata che forse
+                            non è una scelta affatto.
+                        </p>
+
+                        <p>
+                            Noi però abbiamo anche altro. Giochiamo al PC,
+                            esploriamo mondi che non esistono, viviamo
+                            esperienze virtuali - incluso, ironicamente, il
+                            gioco di Avatar. I Na'vi questo non possono farlo.
+                            Non è che abbiano scelto consapevolmente di
+                            rifiutare il PC: semplicemente non l'hanno mai
+                            inventato. Alcune possibilità sono loro precluse non
+                            per scelta, ma per contesto. Questa differenza è
+                            enorme.
+                        </p>
+
+                        <p>
+                            La società umana, oggi, ha almeno la possibilità
+                            della scelta. Puoi mollare tutto e andare a vivere
+                            nei boschi, come in <strong>Into the Wild</strong>;
+                            oppure puoi anche restare a casa e accendere il
+                            computer; la scelta esiste.
+                        </p>
+
+                        <p>
+                            Ovviamente la possibilità di scelta porta con sé
+                            dilemmi morali. In <strong>Into the Wild</strong>,
+                            il protagonista sceglie liberamente di vivere in
+                            mezzo alla natura, e purtroppo muore; le conseguenze
+                            ricadono solo su di lui. Più recentemente, in
+                            Italia, c'è stato il caso della "famiglia nel
+                            bosco", dove due genitori hanno scelto di
+                            abbandonare la modernità per vivere in natura con i
+                            loro figli. Quando i bambini si sono intossicati da
+                            funghi velenosi, sono stati portati in ospedale,
+                            ironicamente uno dei luoghi più tecnologici che
+                            esistano. Questo solleva una domanda importante: gli
+                            adulti possono imporre questa scelta ai bambini, che
+                            non l'hanno fatta consapevolmente? E se la risposta
+                            è no, allora il genitore è veramente libero di
+                            scegliere?
+                        </p>
+
+                        <p>
+                            Tornando ai Na'vi: più che una società perfetta, la
+                            loro è una <strong>situazione perfetta</strong>.
+                        </p>
+
+                        <p>
+                            Noi, come specie, non siamo mai stati in una
+                            situazione simile. A noi non basta una mela al
+                            giorno. Senza agricoltura, senza secoli di selezione
+                            artificiale, senza tecnologia applicata al cibo, non
+                            staremmo in piedi. La mela che mangiamo oggi non
+                            esisteva migliaia di anni fa e non trovare cibo è
+                            stata una delle cause più probabili dell'estinzione
+                            di alcune specie animali.
+                        </p>
+
+                        <p>
+                            La natura, da sola, non provvede a sufficienza per
+                            tutti.
+                        </p>
+
+                        <p>
+                            La caccia, poi, per noi è un incubo. A mani nude
+                            siamo meno forti delle scimmie. Con una lancia forse
+                            stiamo poco sopra, con un arco un po' meglio, con un
+                            fucile siamo in cima alla catena alimentare.
+                            Certamente è deplorevole che, una volta in cima,
+                            usiamo la nostra superiorità per cacciare
+                            rinoceronti solo per sport o per il loro corno e
+                            rischiamo di estinguere intere specie; però senza
+                            queste tecnologie che ci garantiscono di stare in
+                            cima alla piramide dei predatori saremmo più in
+                            difficoltà.
+                        </p>
+
+                        <p>
+                            I Na'vi, in cima alla piramide, ci si ritrovano lì
+                            di default. Anche loro hanno fatto progressi
+                            tecnologici come l'arco, ma questo gli è bastato:
+                            appunto la ragazza gestisce senza problemi i
+                            predatori. e se hai già risolto tutti i problemi
+                            fondamentali, perché dovresti "andare avanti"?
+                        </p>
+
+                        <p>
+                            Anche il clima gioca un ruolo enorme. I Na'vi sono
+                            quasi sempre scoperti. Questo implica che Pandora,
+                            ovunque e sempre, abbia un clima perfetto per loro.
+                            Noi, anche eliminando ogni tabù sul pudore,
+                            continueremmo a vestirci d'inverno per non morire
+                            congelati. Ancora una volta: questa non è, non è mai
+                            stata e non sarà mai la situazione umana sulla
+                            Terra.
+                        </p>
+
+                        <p>
+                            Sull'overconsumismo possiamo discutere, eccome. Io
+                            personalmente non credo di esagerare, ho 10
+                            magliette, che è più del necessario per vivere ma
+                            l'impatto che ho rimane minimo. È evidente che
+                            esista un problema. Ma usare Pandora come
+                            alternativa o modello è un errore di base, perché
+                            <strong>Pandora non esiste</strong>.
+                        </p>
+
+                        <p>
+                            E poi ci sono le malattie. L'idea che "le erbe
+                            curano tutto" è una fantasia. Le medicine non
+                            nascono dal nulla: estraiamo, filtriamo,
+                            concentriamo principi attivi che in natura esistono
+                            in quantità infinitesimali. Non basta un mortaio e
+                            un fuoco. Pensare che un'insalata possa curare
+                            l'ebola è semplicemente ridicolo.
+                        </p>
+
+                        <p>
+                            Quindi, alla domanda:
+                            <em>
+                                Why the Na'vi from Avatar didn't ever develop
+                                advanced technology?
+                            </em>
+                            la risposta onesta è una sola: perché non ne hanno
+                            mai avuto bisogno. E non ne hanno mai avuto bisogno
+                            perché sono <strong>totalmente inventati</strong> e
+                            messi intenzionalmente in una condizione ideale.
+                        </p>
+
+                        <div class="section-divider"></div>
+
+                        <p>
+                            Se però uno volesse davvero fare un post
+                            interessante, uno spunto ci sarebbe. Eywa è reale.
+                            Non è una credenza, non è fede cieca: è un'entità
+                            verificabile, che agisce. In un mondo così sarei
+                            spirituale pure io. Ma questa connessione costante
+                            con il passato, con le memorie degli antenati, con
+                            le tradizioni registrate nell'albero della vita, non
+                            rischia di bloccare ogni slancio verso il futuro?
+                        </p>
+
+                        <p>
+                            Noi abbiamo progredito anche perché la natura non ci
+                            rispondeva, perché il cielo non parlava, perché
+                            nessuna entità ci diceva che "le cose stanno già
+                            bene così". Galileo ha potuto puntare il telescopio
+                            proprio perché nessuna forza reale gli mostrava la
+                            verità pronta all'uso, l'unico ostacolo erano gli
+                            altri umani a cui lui rispose "Eppur si muove". I
+                            Na'vi, invece, vivono in un paradiso che
+                            continuamente gli ricorda chi sono stati e chi
+                            devono restare. Forse il vero motivo per cui non
+                            sviluppano tecnologia non è la loro saggezza, ma il
+                            fatto che il loro mondo non lascia spazio al dubbio,
+                            all'errore, alla necessità di andare oltre.
+                        </p>
+
+                        <div class="section-divider"></div>
+
+                        <p>
+                            C'è anche un'altra cosa da tenere a mente: tra
+                            Avatar 1 e il resto della saga è passato moltissimo
+                            tempo, e non è affatto scontato che oggi James
+                            Cameron abbia esattamente le stesse intenzioni di
+                            allora. Detto questo, non mi sembra che il primo
+                            Avatar nascesse come un manifesto anti-tecnologia o
+                            anti-progresso. Mostra sì una società in armonia con
+                            la natura, ma è anche chiaramente una società
+                            tribale, con valori e strutture legati a dinamiche
+                            primitive. Il fatto, ad esempio, che la figlia del
+                            capo villaggio sia promessa in sposa al capo dei
+                            cacciatori, e che questa decisione venga presa dal
+                            padre senza consultarla, difficilmente può essere
+                            letto come il modello di una società "perfetta", o
+                            anche solo coerente con i valori moderni a cui,
+                            almeno in teoria, tendiamo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-4 text-muted border-top mt-5">
+            <p class="mb-1">
+                Made by
+                <a
+                    href="https://github.com/ValerioCeccarelli"
+                    target="_blank"
+                    class="text-info">
+                    Valerio Ceccarelli
+                </a>
+            </p>
+            <p class="mb-3">
+                With the help of
+                <a
+                    href="https://gemini.google/it/about"
+                    target="_blank"
+                    class="text-info">
+                    Gemini 3
+                </a>
+            </p>
+        </footer>
+
+        <!-- Bootstrap Bundle with Popper (JS) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            xintegrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script>
+            (function () {
+                // Codice per la traduzione del testo citato da Instagram
+                const toggleButton = document.getElementById(
+                    "toggle-quote-translation",
+                );
+                const questionEn = document.querySelector(".quote-question-en");
+                const questionIt = document.querySelector(".quote-question-it");
+                const quoteEn = document.querySelector(".quote-text-en");
+                const quoteIt = document.querySelector(".quote-text-it");
+
+                if (
+                    !toggleButton ||
+                    !questionEn ||
+                    !questionIt ||
+                    !quoteEn ||
+                    !quoteIt
+                ) {
+                    return;
+                }
+
+                const setState = (isItalianVisible) => {
+                    questionEn.classList.toggle("is-hidden", isItalianVisible);
+                    questionIt.classList.toggle("is-hidden", !isItalianVisible);
+                    quoteEn.classList.toggle("is-hidden", isItalianVisible);
+                    quoteIt.classList.toggle("is-hidden", !isItalianVisible);
+
+                    toggleButton.setAttribute(
+                        "aria-pressed",
+                        String(isItalianVisible),
+                    );
+                    toggleButton.setAttribute(
+                        "aria-label",
+                        isItalianVisible
+                            ? "Mostra testo in inglese"
+                            : "Mostra traduzione",
+                    );
+                };
+
+                let italianVisible = false;
+                setState(italianVisible);
+
+                toggleButton.addEventListener("click", () => {
+                    italianVisible = !italianVisible;
+                    setState(italianVisible);
+                });
+            })();
+        </script>
+    </body>
+</html>
